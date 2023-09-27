@@ -1,6 +1,7 @@
 <header class="header">
     <a href="#" class="logo">Portfolio</a>
-    <i class='bx bx-menu' id="menu-icon"></i>
+    <div (click)=menuIcon()> <i class='bx bx-menu' id="menu-icon"></i></div>
+
     <nav class="navbar">
     <a href="#home" class="active">Home</a>
     <a href="#about">About</a>
@@ -10,14 +11,14 @@
     </nav>
 </header>
 
-<section class="home" id="home">
+<section class="home" id="home" [ngsRevealSet]="{ reset:true}" [ngsInterval]="50" [ngsSelector]="'home-content'">
   <div class="home-content">
     <h3>Hello, It's Me</h3>
     <h1>Thabang Sekgotodi</h1>
-    <h3>And I'm a <span>Frontend Developer</span></h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam rem, non sint
-      labore sit dolorum dignissimos, doloremque voluptatibus alias eaque nemo eius neque reiciendis saepe.
-       Quisquam impedit adipisci reprehenderit sed!</p>
+    <h3>And I'm a <span class="multiple-text"></span></h3>
+    <p>As a Software Engineer,I have demostrated my ability to utilise various development languages to build <br>and maintain robust applications.
+      I have proven record of ensuring code efficiency,<br>
+      following best practices and standard and ensuring that it is well-documented.  </p>
        <div class="social-media">
         <a href="#"><i class='bx bxl-facebook' ></i></a>
         <a href="#"><i class='bx bxl-twitter'></i></a>
@@ -46,3 +47,96 @@
        <a href="#" class="btn">Read More</a>
   </div>
 </section>
+
+<section class="services" id="services">
+<h2 class="heading">Our<span>Services</span> </h2>
+ <div class="services-container">
+   <div class="services-box">
+    <i class="bx bxs-paint"></i>
+    <h3>Graphic Design</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
+      Officiis quas perferendis quaerat, ducimus accusamus consequatur!<br>
+      Tempore tenetur velit consequatur quis enim praesentium porro cumque autem? Mollitia nisi repellat ab ea?  </p>
+      <a href="#" class="btn">Read More </a>
+   </div>
+ </div>
+
+ <div class="services-container">
+  <div class="services-box">
+   <i class="bx bx-code-alt"></i>
+   <h3>Web Development</h3>
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
+     Officiis quas perferendis quaerat, ducimus accusamus consequatur!<br>
+     Tempore tenetur velit consequatur quis enim praesentium porro cumque autem? Mollitia nisi repellat ab ea?  </p>
+     <a href="#" class="btn">Read More </a>
+  </div>
+</div>
+<div class="services-container">
+  <div class="services-box">
+   <i class="bx bx-bar-chart-alt"></i>
+   <h3>Digital Marketing</h3>
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
+     Officiis quas perferendis quaerat, ducimus accusamus consequatur!<br>
+     Tempore tenetur velit consequatur quis enim praesentium porro cumque autem? Mollitia nisi repellat ab ea?  </p>
+     <a href="#" class="btn">Read More </a>
+  </div>
+</div>
+</section>
+<section class="portfolio" id="portfolio">
+  <h2 class="heading">Latest <span>Project</span></h2>
+  <div class="portfolio-container">
+    <div class="portfolio-box">
+      <img src="assets/tbang_portfolio.jpg" alt="">
+      <div class="portfolio-layer">
+        <h4>Web Design</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, exercitationem!</p>
+        <a href="#"><i class='bx bxl-link-external'></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio-container">
+    <div class="portfolio-box">
+      <img src="assets/tbang_portfolio.jpg" alt="">
+      <div class="portfolio-layer">
+        <h4>Web Design</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, exercitationem!</p>
+        <a href="#"><i class='bx bxl-link-external'></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio-container">
+    <div class="portfolio-box">
+      <img src="assets/tbang_portfolio.jpg" alt="">
+      <div class="portfolio-layer">
+        <h4>Web Design</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, exercitationem!</p>
+        <a href="#"><i class='bx bxl-link-external'></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="heading">Contact<span>Me!</span></h2>
+  <form action="#">
+    <div class="input-box">
+      <input type="text" placeholder="Full Name">
+      <input type="Email" placeholder="Email Address">
+    </div>
+    <div class="input-box">
+      <input type="text" placeholder="Mobile Number">
+      <input type="Email" placeholder="Email Subject">
+    </div>
+    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+    <input type="submit" value="Send Message" class="btn">
+  </form>
+</section>
+
+<footer class="footer">
+  <div class="footer-text">
+    <p>Copyright &copy; 2023 by Thabang | All Rights Reserved.</p>
+  </div>
+  <div class="footer-iconTop">
+    <a href="#home"> <i class="bx bx-up-arrow-alt"></i></a>
+  </div>
+</footer>
